@@ -15,4 +15,4 @@ GoViolin is a web app written in Go that helps with violin practice, and docker,
 5) Get external IP of the load balancer service we just created `$ kubectl get svc`
 6) Open any brower and browse `http://<external-ip>:8080` 
 
-![Deploying GoViolin on minikube]([(https://github.com/hossamelshamyy/GoViolin-DevOps/blob/master/gif.gif]))
+![Deploying GoViolin on minikube](https://github.com/hossamelshamyy/GoViolin-DevOps/blob/master/gif.gif)
