@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build Docker') {
       steps {
-        # Remove old images first then build a new one
+        // Remove old images first then build a new one
         sh '''
         #!/bin/bash
         if [[ $(docker image ls | grep 'hossamelshamy/goviolin_image') ]]; then
