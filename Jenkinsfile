@@ -6,7 +6,7 @@ pipeline {
         // Remove old images first then build a new one
         sh '''
         #!/bin/bash
-        if [[ $(docker image ls | grep 'hossamelshamy/goviolin_image') ]]; then
+        if ! [[ $(docker image ls | grep 'hossamelshamy/goviolin_image') ]]; then
         docker rmi hossamelshamy/goviolin_image
         fi'''
         sh 'docker build -t hossamelshamy/goviolin_image .'
