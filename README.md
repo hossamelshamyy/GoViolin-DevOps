@@ -1,4 +1,4 @@
-# GoViolin with DevOps Technoloies
+# GoViolin with DevOps Technologies
 
 GoViolin is a web app written in Go that helps with violin practice, and docker, jenkins and k8s files are added.<br /><br />
 
