@@ -14,3 +14,5 @@ GoViolin is a web app written in Go that helps with violin practice, and docker,
 4) Create virtual load balancer service `$ kubectl expose deployment goviolin-app --type=LoadBalancer --port=8080`
 5) Get external IP of the load balancer service we just created `$ kubectl get svc`
 6) Open any brower and browse `http://<external-ip>:8080` 
+
+![Deploying GoViolin on minikube]([link](https://github.com/hossamelshamyy/GoViolin-DevOps/blob/master/gif.gif))
