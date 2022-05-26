@@ -5,7 +5,7 @@ GoViolin is a web app written in Go that helps with violin practice, and docker,
 
 
 **Note**<br />
--Make sure you added your DockerHub credentials in jenkins with ID=`DockerHub`, otherwise Pushing image to DockerHub stage will fail.<br />
+-Make sure you added your DockerHub credentials in jenkins with ID=`DockerHub`.<br />
 -If you faced any problem in building docker stage, try to add jenkins to docker group -incase you didn't before- by excuting this command:<br /> `$ sudo usermod -a -G docker jenkins`. <br /><br /><br />
 ### To run the app in browser locally using minikube
 1) Make sure that minikube is running
