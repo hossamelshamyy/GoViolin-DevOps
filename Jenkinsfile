@@ -6,14 +6,14 @@ pipeline {
         sh 'docker rmi hossamelshamy/goviolin_image'
         sh 'docker build -t hossamelshamy/goviolin_image .'
       }
-      post {
-                success {
-                    echo 'Building Docker Image Succeeded'
+    post {
+      success {
+        echo 'Building Docker Image Succeeded'
         }
-                failure {
-                    echo 'Building Docker Image FAILED'
-                }
-            }
+      failure {
+        echo 'Building Docker Image FAILED'
+        }
+      }
     }
 
     stage('Push to DockerHub') {
@@ -23,14 +23,13 @@ pipeline {
         }
       }
       post {
-                success {
-                    echo 'Pushing Docker Image Succeeded'
+        success {
+            echo 'Pushing Docker Image Succeeded'
         }
-                failure {
-                    echo 'Pushing Docker Image FAILED'
-                }
-            }
+        failure {
+            echo 'Pushing Docker Image FAILED'
+        }
+      }
     }
-
   }
 }
